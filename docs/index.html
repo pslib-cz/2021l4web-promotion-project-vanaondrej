@@ -33,21 +33,22 @@
                 </ul>
             </div>
         </nav>
-        <div class="header-cont2">
+        <div class="header__h">
             <h2>AV<br>Aby kreativita byla vidět</h2>
         </div>
-        <div class="header-cont3">
+        <div class="header__text">
             <p>originálně designované mikiny z organické bavlny</p>
             <p>pro všechny kreativce</p>
         </div>
-        <button class="page-header-btn">kup teď</button>
+        <button class="header__btn">kup teď</button>
     </header>
-    <main class="page-main">
+    <main>
 
         <div class="section" id="proc">
             <div class="section__text">
                 <h2>Proč zrovna AV?</h2>
-                <p>Na Vašem pohodlí nám záleží. Záleží nám na něm, jako na ničem jiném. Naše mikiny prošly pečlivým výběrem
+                <p>Na Vašem pohodlí nám záleží. Záleží nám na něm, jako na ničem jiném. Naše mikiny prošly pečlivým
+                    výběrem
                     odborníku, kteří se v tomto oboru pohybují již řadu let.</p>
                 <p>Pomohli nám vybrat to nejlepší za nejlepší částku. Ne nadarmo se říká, že poměr cena ku kvalitě je to
                     hlavní.</p>
@@ -69,15 +70,13 @@
                 </div>
             </div>
         </div>
-        <div class="page-main-section-par" id="onas">
+        <div class="section--par" id="onas">
             <div class="section__text">
-                <div class="section__text">
-                    <h2>O nás</h2>
-                    <p>AV je začínající firma v odvětví oblečení, především v lifestylových mikinách. Do lifestyle stylu
-                        uzpůsobujeme i celou prezentaci naší firmy, jelikož to k nám prostě sedí!</p>
-                    <p>To že jsme začínající firma avšak neznamená, že nemáme zkušenosti ať už s výrobou, či přímo na trhu.
-                        Celý tým firmy totiž tvoří odborníci, kteří mají již své firmy rozjeté na celé obrátky.</p>
-                </div>
+                <h2>O nás</h2>
+                <p>AV je začínající firma v odvětví oblečení, především v lifestylových mikinách. Do lifestyle stylu
+                    uzpůsobujeme i celou prezentaci naší firmy, jelikož to k nám prostě sedí!</p>
+                <p>To že jsme začínající firma avšak neznamená, že nemáme zkušenosti ať už s výrobou, či přímo na trhu.
+                    Celý tým firmy totiž tvoří odborníci, kteří mají již své firmy rozjeté na celé obrátky.</p>
             </div>
             <div class="section__pictures">
                 <div class="picture"><img src="./imgs/mobile/4.png" alt="obrázek"></div>
@@ -91,20 +90,25 @@
                     produktů zaměřily také.
                 </p>
                 <p>Samotná mikina je vyrobena z organické bavlny a je dodávána bez zbytečných igelitů v papírové tašce z
-                    již recyklovaného papíru. Nemusíte se tedy bát, že by cokoliv z našich produktů mohlo zatěžovat přírodu.
+                    již recyklovaného papíru. Nemusíte se tedy bát, že by cokoliv z našich produktů mohlo zatěžovat
+                    přírodu.
                 </p>
             </div>
             <div class="section__pictures">
-                <div class="section__picture"><div class="picture"><img src="./imgs/mobile/6.jpg" alt="obrázek"></div></div>
-                <div class="section__picture"><div class="picture"><img src="./imgs/mobile/7.jpg" alt="obrázek"></div></div>
+                <div class="section__picture">
+                    <div class="picture"><img src="./imgs/mobile/6.jpg" alt="obrázek"></div>
+                </div>
+                <div class="section__picture">
+                    <div class="picture"><img src="./imgs/mobile/7.jpg" alt="obrázek"></div>
+                </div>
             </div>
         </div>
-        <div class="page-main-section-dark" id="eshop">
+        <div class="section--dark" id="eshop">
             <p class="slogan">Jste připraveni <br> začít nosit?</p>
             <button class="page-header-btn-low">e-shop</button>
         </div>
     </main>
-    <footer class="page-footer">
+    <footer>
         <ul>
             <li>Reklamační řád</li>
             <li>Obchodní podmínky</li>
@@ -123,24 +127,25 @@
             });
         });
     </script>
- <script type="text/javascript">
-    var burger = document.querySelector(".navbar__container__icon");
-    var nav = document.querySelector(".navbar__container__menu");
-    var close = document.querySelector("body");
+    <script type="text/javascript">
+        var burger = document.querySelector(".navbar__container__icon");
+        var nav = document.querySelector(".navbar__container__menu");
+        var close = document.querySelector("body");
 
-    burger.addEventListener("click", (event) => {
-        event.stopPropagation();
-        nav.classList.toggle("responsive");
-    });
+        burger.addEventListener("click", (event) => {
+            event.stopPropagation();
+            nav.classList.toggle("responsive");
+        });
 
-    close.addEventListener("click", () => {
-        nav.classList.remove("responsive");
-    });
+        close.addEventListener("click", () => {
+            nav.classList.remove("responsive");
+        });
 
-    window.addEventListener("resize", function () {
-        if (window.innerWidth > 767) nav.classList.remove("menu-opened");
-    });
-</script>
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 767) nav.classList.remove("menu-opened");
+        });
+    </script>
 
 </body>
+
 </html>
