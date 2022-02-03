@@ -3,7 +3,7 @@ Vítejte na rozcestníku školního projektu, který se zaobírá kampaní na fi
 
 Jedním z výstupů kampaně je samotný [landing page](https://pslib-cz.github.io/2021l4web-promotion-project-vanaondrej/).
 
-![slogan](/img/Web 1920-1.png)
+![Slogan firmy](https://github.com/pslib-cz/2021l4web-promotion-project-vanaondrej/blob/master/img/Web%201920%20%E2%80%93%201.png)
 
 Zde naleznete **finální prezentaci**:
 
